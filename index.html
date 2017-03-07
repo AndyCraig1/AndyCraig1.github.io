@@ -2,6 +2,18 @@
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="assets/js/typed.js"></script>
+<script>
+  $(function(){
+      $(".element").typed({
+        strings: ["Highschool Student", "Software developer"],
+        typeSpeed: 50
+      });
+  });
+</script>
+
 <head>
     <title>Andy Craig</title>
     <!-- Meta -->
@@ -37,8 +49,13 @@
         <div class="container">
             <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="Andy" />
             <div class="profile-content pull-left">
+
                 <h1 class="name">Andy Craig</h1>
-                <h2 class="desc"></h2>
+                <div id="typed-strings">
+                    <h2 class="desc">Highschool Student</h2>
+                    <h2 class="desc">Software Developer</h2>
+                </div>
+
                 <ul class="social list-inline">
                     <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
@@ -295,15 +312,3 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
-<script src="assets/js/typed.js"></script>
-<script>
-  $(function(){
-      $(".element").typed({
-        strings: ["Highschool Student", "Software developer"],
-        typeSpeed: 0
-      });
-  });
-</script>
-...
-
-<div class="element"></div>
