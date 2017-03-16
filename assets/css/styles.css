@@ -25,6 +25,12 @@ h6 {
   font-weight: 700;
   color: #778492;
 }
+h5{
+  color: #4e5798;
+  display: inline
+}h6{
+  display: inline
+}
 a {
   color: #3aaa64;
   -webkit-transition: all 0.4s ease-in-out;
@@ -441,6 +447,28 @@ iframe {
 .languages .item .fa {
   color: #79d19a;
 }
+.awards .item .fa {
+  color: #79d19a;
+}
+.awards .item .title {
+  color: #778492;
+}
+.awards .item {
+  margin-bottom: 15px;
+}
+.extracurriculars .item .fa {
+  color: #79d19a;
+}
+.extracurriculars .item .title {
+  color: #778492;
+}
+.extracurriculars .item {
+  margin-bottom: 15px;
+}
+dd{
+  margin-left : 30px;
+}
+
 /* Blog Section */
 .blog .item {
   margin-bottom: 30px;
