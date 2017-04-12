@@ -2,7 +2,7 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: url(background5.jpg) repeat;
+  background: url(background10.jpg) repeat;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -112,7 +112,7 @@ iframe {
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
-  background: url(background2.jpg) repeat; ;
+  background: url(background7.jpg) repeat; ;
   border-top: 10px solid #778492;
   border-bottom: 10px solid #778492;
 
@@ -168,6 +168,8 @@ iframe {
 }
 .section {
   margin-bottom: 30px;
+  border-style: dashed;
+  border-color: black;
 }
 .section .section-inner {
   background: #fff;
