@@ -19,6 +19,7 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->
+    <script src="assests/plugins/jquery-1.11.1.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <!-- github acitivity css -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
@@ -31,10 +32,17 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+          $('#instructions').modal('show');
+        });
+    </script>
+
 
 </head>
 
 <body>
+
     <!-- ******HEADER****** -->
     <header class="header">
         <div class="container">
@@ -56,10 +64,85 @@
                 </ul>
             </div><!--//profile-->
 
-            <a class="btn btn-cta-primary pull-right" href="contact.html"   ><i class="fa fa-paper-plane"></i> Contact Me</a>
+
+            <button type="button" class="btn btn-cta-primary pull-right" data-toggle="modal" data-target="#Contact">
+              <i class = "fa fa-user"></i> Contact
+            </button>
+            <!-- Button trigger modal -->
+
+
+
 
         </div><!--//container-->
     </header><!--//header-->
+    <body>
+      <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="Contact" tabindex="-1" role="dialog" aria-labelledby="Contact Info" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Contact Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p> Feel free to contact me if you have any questions surrounding this website or myself.</p> <br>
+        <dl>
+          <dt>Telephone :</dt>
+            <dd>Home : 647-347-9481</dd>
+            <dd>Cell : 647-808-9481</dd>
+          <dt>Email : </dt>
+            <dd>School : <a href = "mailto:andy.craig@ucc.on.ca">andy.craig@ucc.on.ca</a></dd>
+            <dd>Home : <a href = "mailto:andy.craig@ucc.on.ca">andypandy.craig@gmail.com</a></dd>
+        </dl>
+        <p><i class = "fa fa-instagram"></i><b> Instagram: </b> andy_craig1</p>
+        <p><i class = "fa fa-snapchat"></i><b> Snapchat: </b> andy_craig1</p>
+        <p><i class = "fa fa-home"></i><b>Houseparty: </b> andispandis</p>
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary" data-dismiss = "modal" aria-label = "close">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Email" tabindex="-1" role="dialog" aria-labelledby="Contact Info" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Email Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="https://formspree.io/andy.craig@ucc.on.ca" method="post">
+      <div class="modal-body">
+        <div class = "form-group">
+                  <input class = "form-control" type="text" name="_replyto" placeholder="Email" /> <br>
+                  <textarea  class = "form-control" name="text" placeholder="Message" rows="8"></textarea> <br>
+        </div>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+
+        <input type="submit" class="btn btn-primary"  aria-label = "close">
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
     <div class="container sections-wrapper">
         <div class="row">
@@ -180,7 +263,7 @@
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Toronto, Canada</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:andy.craig@ucc.on.ca">andy.craig@ucc.on.ca</a></li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a data-toggle="modal" data-target="#Email">andy.craig@ucc.on.ca</a></li>
                                 <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://andycraig.tech</a></li>
                             </ul>
                         </div><!--//content-->
@@ -363,11 +446,13 @@
 
                 <aside class="credits aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Computer Science Pages</h2>
+                        <h2 class="heading">Other Web Pages</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><a href="game.html" target="_blank"><i class="fa fa-external-link"></i> Game.js</a></li>
                                 <li><a href="http://myosnake.life" target="_blank"><i class="fa fa-external-link"></i> MyoSnake</a></li>
+                                <li><a href="http://dougiecraig.github.io" target="_blank"><i class="fa fa-external-link"></i> Dad's Website</a></li>
+                                <li><a href="http://acr0nin.github.io" target="_blank"><i class="fa fa-external-link"></i> Friend's Website</a></li>
                             </ul>
 
 
@@ -384,6 +469,7 @@
                 <small class="copyright">Designed with : A computer <i class = "fa fa-desktop"></i>, my fingers <i class = "fa fa-keyboard-o"></i> and Github <i class = "fa fa-github"></i>
         </div><!--//container-->
     </footer><!--//footer-->
+
 
     <!-- Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
